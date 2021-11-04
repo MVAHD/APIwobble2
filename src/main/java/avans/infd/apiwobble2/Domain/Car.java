@@ -1,5 +1,6 @@
 package avans.infd.apiwobble2.Domain;
 
+import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
 public class Car {
