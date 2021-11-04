@@ -1,5 +1,6 @@
 package avans.infd.apiwobble2.Domain;
 
+import javax.validation.constraints.Size;
 import javax.persistence.*;
 import java.time.LocalDate;
 
