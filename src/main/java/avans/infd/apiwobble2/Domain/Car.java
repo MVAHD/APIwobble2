@@ -2,7 +2,7 @@ package avans.infd.apiwobble2.Domain;
 
 import java.time.LocalDate;
 
-public class Car {
+public abstract class Car {
     //Attributes
     private long id;
     private String licensePlate;
