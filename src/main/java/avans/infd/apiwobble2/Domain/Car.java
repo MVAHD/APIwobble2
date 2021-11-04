@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table
-public class Car {
+public abstract class Car {
     @Id
     @SequenceGenerator(
             name = "car_sequence",
@@ -16,6 +16,7 @@ public class Car {
             strategy = GenerationType.SEQUENCE,
             generator = "car_sequence"
     )
+
     private long id;
 
     //Attributes
