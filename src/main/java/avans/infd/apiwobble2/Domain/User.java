@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.time.Period;
 
 @Entity //Makes object of User and maps to table.
-//Todo: add to Car.
+//Todo: add to Car:: ?
 //Todo: make delete for User.
 public class User {
     @Id
@@ -25,7 +25,6 @@ public class User {
 
     //Attributes
     @Size(min = 3, max = 15)
-    //Todo: add to Car.licensePlate.
     @NotBlank(message = "Name is mandatory")
     private String userName;
     @NotBlank(message = "Email is mandatory")
