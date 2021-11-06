@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApIwobble2Application {
+public class APIwobble2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(ApIwobble2Application.class, args);
+        SpringApplication.run(APIwobble2Application.class, args);
     }
 
 }

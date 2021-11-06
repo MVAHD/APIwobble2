@@ -9,4 +9,14 @@ public class FCEV extends Car{
     {
         type = "Fuel Cell Electric Vehicle";
     }
+
+    //Constructors
+    public FCEV(String licensePlate, String color) {
+        super(licensePlate, color);
+    }
+
+    //Getters and Setters
+    public String getType() {
+        return type;
+    }
 }

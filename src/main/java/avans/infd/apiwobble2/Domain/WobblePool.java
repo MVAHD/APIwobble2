@@ -30,6 +30,4 @@ public class WobblePool {
         //Todo: bugFix? Arrays.asList()
         wobbleCars.addAll(List.of(cars));
     }
-
-
 }

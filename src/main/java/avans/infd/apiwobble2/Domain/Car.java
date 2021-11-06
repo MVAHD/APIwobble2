@@ -42,6 +42,11 @@ public abstract class Car {
     public Car() {
     }
 
+    public Car(String licensePlate, String color) {
+        this.licensePlate = licensePlate;
+        this.color = color;
+    }
+
     public Car(String licensePlate,
                String brand,
                String model,
