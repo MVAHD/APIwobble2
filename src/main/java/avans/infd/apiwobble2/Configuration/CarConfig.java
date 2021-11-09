@@ -13,19 +13,25 @@ import java.util.List;
 
 @Configuration
 public class CarConfig {
-
-    @Bean
-    CommandLineRunner commandLineRunner(CarRepo carRepo){
-        return args -> {
-            Car car1 = new ICE("05KSN7", "Metalic");
-            Car car2 = new FCEV("RS809V", "Perlmore");
-            Car car3 = new ICE("9XXK14", "Blauw");
-            Car car4 = new BEV("DS059T", "Black");
-
-            carRepo.saveAll(
-                    List.of(car1, car2, car3, car4)
-            );
-        };
+    //Todo: make english. And fix return.
+    @Bean//Geeft aan aan de repo dat dit een entity is. een stukje code wat je makkelijk kan implementeren.
+    //Dit is een functie die stand-allone kan runnen. Het is een springboot interface
+    // en wordt automatisch uitgevoerd naa het laden van de applicatie
+    // en geeft de vrijheid om een functie uit tevoeren?
+    CommandLineRunner insertTestCars(CarRepo carRepo){
+        //Een vrije functie zonder gevolgen.
+//        return args -> {
+            //Maar hier zit wel een fout in.
+//            Car car1 = new ICE("05KSN7", "Metalic");
+//            Car car2 = new FCEV("RS809V", "Perlmore");
+//            Car car3 = new ICE("9XXK14", "Blauw");
+//            Car car4 = new BEV("DS059T", "Black");
+//
+//            carRepo.saveAll(
+//                    List.of(car1, car2, car3, car4)
+//            );
+//        };
+        return args -> {};
     }
 
 }

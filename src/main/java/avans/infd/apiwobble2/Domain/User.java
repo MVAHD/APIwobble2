@@ -76,6 +76,12 @@ public class User {
         this.registrationDate = LocalDateTime.now();
     }
 
+    //test constructor
+    public User(String userName, LocalDate dateOfBirth) {
+        this.userName = userName;
+        this.dateOfBirth = dateOfBirth;
+    }
+
     //Methods
     public String getDetails() {
         return "User{" +

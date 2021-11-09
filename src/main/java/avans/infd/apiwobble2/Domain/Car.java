@@ -45,6 +45,7 @@ public abstract class Car {
     public Car() {
     }
 
+    //test constructor
     public Car(String licensePlate, String color) {
         this.licensePlate = licensePlate;
         this.color = color;
