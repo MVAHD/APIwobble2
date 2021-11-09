@@ -1,10 +1,11 @@
 package avans.infd.apiwobble2.Domain;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
 @Entity
-@Table
 public abstract class Car {
     @Id
     @SequenceGenerator(
@@ -20,6 +21,8 @@ public abstract class Car {
     private long id;
 
     //Attributes
+    @Size(min= 6, max = 6)
+    @NotBlank(message = "License plate is mandatory")
     private String licensePlate;
     private String brand;
     private String model;
@@ -42,6 +45,7 @@ public abstract class Car {
     public Car() {
     }
 
+    //test constructor
     public Car(String licensePlate, String color) {
         this.licensePlate = licensePlate;
         this.color = color;
