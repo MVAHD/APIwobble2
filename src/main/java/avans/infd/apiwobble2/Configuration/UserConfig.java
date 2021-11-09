@@ -13,7 +13,7 @@ import java.util.List;
 public class UserConfig {
 
     @Bean
-    CommandLineRunner insertTestUsers(UserRepo userRepo){
+    CommandLineRunner insertTestUsers(UserRepo userRepo) {
         return args -> {
             User user1 = new User("Aukeis", LocalDate.of(2000, 8, 2));
             User user2 = new User("Aukas", LocalDate.of(1999, 6, 2));
