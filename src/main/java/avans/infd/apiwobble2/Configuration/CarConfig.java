@@ -20,18 +20,19 @@ public class CarConfig {
     // en geeft de vrijheid om een functie uit tevoeren?
     CommandLineRunner insertTestCars(CarRepo carRepo){
         //Een vrije functie zonder gevolgen.
-//        return args -> {
+        return args -> {
             //Maar hier zit wel een fout in.
-//            Car car1 = new ICE("05KSN7", "Metalic");
-//            Car car2 = new FCEV("RS809V", "Perlmore");
-//            Car car3 = new ICE("9XXK14", "Blauw");
-//            Car car4 = new BEV("DS059T", "Black");
-//
-//            carRepo.saveAll(
-//                    List.of(car1, car2, car3, car4)
-//            );
-//        };
-        return args -> {};
+            Car car1 = new ICE("05KSN7", "Metalic");
+            Car car2 = new FCEV("RS809V", "Perlmore");
+            Car car3 = new ICE("9XXK14", "Blauw");
+            Car car4 = new BEV("DS059T", "Black");
+            Car car5 = new BEV();
+
+            carRepo.saveAll(
+                    List.of(car1, car2, car3, car4)
+            );
+        };
+//        return args -> {};
     }
 
 }
