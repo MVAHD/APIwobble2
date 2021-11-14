@@ -10,6 +10,7 @@ import java.time.Period;
 @Entity //Makes object of User and maps to table.
 //Todo: add to Car:: ?
 //Todo: make delete for User.
+//HIER KUNNEN WE NIET ECHT MAKKELIJK LOMBOK AAN TOEVOEGEN, OMDAT WE NIET VOOR ALLE VELDEN EEN GETTER EN SETTER WILLEN HEBBEN.
 public class User {
     @Id
     @SequenceGenerator(
