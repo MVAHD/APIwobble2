@@ -27,10 +27,12 @@ class ApiWobble2ApplicationTests {
         assertEquals(user1.getAge(), user2.getAge());
     }
 
+
     @Test
-    public void whenBlankName_thenOneConstraintViolation() {
+    public void testPassword() {
         // - todo - add test for constraint violation
         User user = new User("", LocalDate.parse("01-01-1990"));
+        user.setPassword("thisIsTest");
     }
 
 }

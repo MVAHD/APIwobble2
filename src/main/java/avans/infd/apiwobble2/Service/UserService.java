@@ -3,6 +3,8 @@ package avans.infd.apiwobble2.Service;
 import avans.infd.apiwobble2.Domain.User;
 import avans.infd.apiwobble2.Repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
