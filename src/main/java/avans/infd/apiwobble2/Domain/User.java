@@ -1,5 +1,7 @@
 package avans.infd.apiwobble2.Domain;
 
+import org.springframework.security.crypto.password.PasswordEncoder;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
@@ -197,8 +199,20 @@ public class User {
     public LocalDateTime getRegistrationDate() {
         return registrationDate;
     }
-    //Todo: add hashing and verifying of old password
-    public void setPassword(String password) {
-        this.password = password;
+
+    public void setPassword(String rawPassword) {
+        PasswordEncoder passwordEncoder = new PasswordEncoder() {
+            @Override
+            public String encode(CharSequence charSequence) {
+                return null;
+            }
+
+            @Override
+            public boolean matches(CharSequence charSequence, String s) {
+                return false;
+            }
+        };
+
+        this.password = passwordEncoder.encode(rawPassword);
     }
 }
