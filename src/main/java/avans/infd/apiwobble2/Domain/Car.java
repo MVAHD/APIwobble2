@@ -32,6 +32,7 @@ public abstract class Car {
     private boolean hasTrailerHitch;
     private int towingCapacity;
     private int paxCapacity;
+    private double carTariff;
 
     //CarTerms
     private boolean rentedOut;
@@ -75,6 +76,14 @@ public abstract class Car {
     public String rentCar(){
         this.rentedOut = true;
         return this.licensePlate;
+    }
+
+    public double getCarTariff() {
+        return carTariff;
+    }
+
+    public void setCarTariff(double carTariff) {
+        this.carTariff = carTariff;
     }
 
     public String getColor() {
